@@ -256,3 +256,103 @@ nav{
     color: rgb(212, 156, 0);
     background: rgb(0, 0, 0);
 }
+}
+
+
+/* Our Menu */
+
+
+.menu-section{
+    padding: 20px 0;
+    background: whitesmoke;
+    width: 100%;
+}
+.menu-section .menu-head h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 1.5px;
+    padding: 10px 0;
+    color: rgb(206, 153, 9);
+    text-shadow: 0 0 5px rgb(250, 246, 244);
+}
+
+.menu-section .jam-cards{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.menu-section .jam-cards .jam-card{
+    display: grid;
+    height: 350px;
+    grid-template-rows: 70% 30%;
+    background: rgba(247, 245, 245, 0.705);
+    position: relative;
+}
+.menu-section .jam-cards .jam-card .product-img-price{
+    position: relative;
+    
+}
+
+.menu-section .jam-cards .jam-card .product-img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px -2px 10px rgba(255, 185, 185, 0.322),
+                -2px -2px 10px rgba(141, 223, 255, 0.322);
+}
+.menu-section .jam-cards .jam-card .product-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.menu-section .jam-cards .jam-card .product-details .product-name{
+    font-size: 18px;
+    color: rgb(206, 153, 9);
+    font-family: 'PT Sans Caption', sans-serif;
+
+}
+
+.menu-cart{
+    position: absolute;
+    right: 2%;
+    bottom: 20%;
+    height: 20%;
+    background: rgba(243, 241, 241, 0.288);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-self: center;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px black;
+    cursor: pointer;
+}
+.menu-cart .menu-add-to-cart,
+.menu-cart .menu-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-cart .menu-price {
+    font-size: 15px;
+    border-top: 1px solid rgba(36, 36, 36, 0.918);
+}
+.menu-cart .menu-price i{
+    font-size: 14px;
+    padding: 1px;
+    color: rgb(206, 153, 9);
+}
+.menu-cart .menu-add-to-cart{
+    color: rgb(54, 54, 54);
+}
+.menu-cart:hover >.menu-add-to-cart{
+    color: rgb(253, 101, 0);
+    box-shadow: 0 0 10px white;
+}
