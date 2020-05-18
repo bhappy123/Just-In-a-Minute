@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Gloria+Hallelujah&family=Lalezar&family=Monoton&family=PT+Sans+Caption&family=Sacramento&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    background: rgb(19, 18, 18);
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.288);
+}
+.nav-items{
+    height: 80px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items .logo{
+    color: rgb(235, 207, 48);
+    font-family: 'Fredoka One', cursive;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.nav-items .links ul{
+    display: flex;
+}
+.nav-items .links ul li{
+    list-style-type: none;
+    padding: 6px 10px;
+    margin: 0 15px;
+}
+.nav-items .links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 600;
+}
+.nav-items .links ul li a.active{
+    color: rgb(231, 180, 38);
+}
+.nav-items .links ul li a:hover{
+    color: rgb(231, 180, 38);
+}
+/* .nav-items .links ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: wheat;
+    animation: anima 0.4s 1s infinite;
+    
+}
+@keyframes anima{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+    }
+} */
+.nav-items .cart{
+    font-size: 20px;
+    color: rgb(231, 180, 38);
+    position: relative;
+    cursor: pointer;
+}
+.nav-items .cart:hover{
+    color: rgb(206, 153, 9);
+}
+.nav-items .cart::before{
+    content: '0';
+    font-size: 12px;
+    position: absolute;
+    top: -22%;
+    right: -5%;
+    padding: 1px 2px;
+    border-radius: 2px;
+    background: white;
+
+}
+.top-section{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.418)), url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.top-section .top-head{
+}
+.top-section .top-head h1{
+    font-size: 65px;
+    letter-spacing: 3px;
+    font-family: 'Lalezar', cursive;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px rgba(231, 180, 38, 0.623);
+    text-align: center;
+}
+.top-section .top-search{
+    margin-bottom: 20px;
+}
+.top-section .top-search input{
+    width: 40vw;
+    height: 40px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 18px 0 0 18px;
+    padding-left: 30px;
+
+}
+.top-section .top-search button{
+    height: 40px;
+    width: 50px;
+    margin-left: -4px;
+    box-shadow: none;
+    outline: none;
+    background: rgb(206, 153, 9);
+    border: none;
+    color: white;
+    border-radius: 0 18px 18px 0;
+    cursor: pointer;
+    text-align: center;
+}
+.top-section .top-search button:hover{
+    background-color: rgb(231, 180, 38);
+}
+.top-section .top-order-now{
+    height: 40%;
+    width: 50%;
+    background: rgba(184, 184, 184, 0.377);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-section .top-order-now a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Gloria Hallelujah', cursive;;
+    padding: 15px 20px;
+    background: rgb(231, 180, 38);
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+}
+.top-section .top-order-now a:hover{
+    color: rgb(231, 180, 38);
+    background: white;
+}
+.today-offer-section{
+    padding: 20px 0;
+    background: whitesmoke;
+    width: 100%;
+}
+.today-offer-section .today-offer-head h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 1.5px;
+    padding: 10px 0;
+    color: rgb(206, 153, 9);
+    text-shadow: 0 0 5px rgb(250, 246, 244);
+}
+
+.today-offer-section .jam-cards{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.today-offer-section .jam-cards .jam-card{
+    display: grid;
+    height: 350px;
+    grid-template-rows: 70% 30%;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.555);
+}
+.today-offer-section .jam-cards .jam-card .product-img-price{
+    position: relative;
+    
+}
+
+.today-offer-section .jam-cards .jam-card .product-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.today-offer-section .jam-cards .jam-card .product-price{
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    z-index: 5;
+    padding: 8px;
+    border-radius: 20px;
+    background: white;
+    font-size: 16px;
+}
+.today-offer-section .jam-cards .jam-card .product-price span{
+    font-size: 14px;
+    color: rgb(206, 153, 9);
+    margin-right: 5px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 800;
+}
+.today-offer-section .jam-cards .jam-card .product-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.today-offer-section .jam-cards .jam-card .product-details .product-name{
+    font-size: 18px;
+    color: rgb(206, 153, 9);
+    font-family: 'PT Sans Caption', sans-serif;
+
+}
+.today-offer-section .jam-cards .jam-card .product-details .add-to-cart{
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'PT Sans Caption', sans-serif;
+    padding: 6px 10px;
+    background: transparent;
+    box-shadow: 0 0 2px black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.today-offer-section .jam-cards .jam-card .product-details .add-to-cart span{
+    color: rgb(226, 166, 0);
+}
+.today-offer-section .jam-cards .jam-card .product-details .add-to-cart:hover{
+    color: rgb(212, 156, 0);
+    background: rgb(0, 0, 0);
+}
